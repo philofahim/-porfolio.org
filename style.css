@@ -25,14 +25,17 @@ body{
     width: 20%;
 }
 a{
+    margin-left: 10%;
     display: inline-block;
     color: bisque;
+    /* background: rgb(182, 78, 78); */
     text-align: center;
     text-decoration: none;
     width: calc(70% / 4);
     font-size: 25px;
     transform: scale(1);
     transition: 0.3s;
+    width: fit-content;
 }
 
 .home::before{
@@ -54,7 +57,7 @@ a:hover{
         color: rgb(238, 238, 161);
     }
     .home{
-        margin-left:-2.5%;
+        margin-left:2%;
     }
     
     .spans{
@@ -278,5 +281,42 @@ img{
     }
 }
 
-
+@media screen and (max-width:444px) {
+    .nav{
+        position: fixed;
+        top: 3px;
+        height: fit-content;
+    }
+    .name{
+        font-size: 20px;
+    }
+    a{
+        padding: 0;
+        font-size: 20px;
+    }
+    img{
+        display: block;
+        position: absolute;
+        top: 32%;
+        margin-left: 4.0%;
+    }
+    .line{
+        position: absolute;
+        right: 0;
+        top: 27.5%;
+        width: 340px;
+    }
+    .lorem{
+        position: absolute;
+        top: 85%;
+    }
+    .texts{
+        display: inline-block;
+        position: relative;
+        top: 50px;
+        left: -175px;
+        padding: 0;
+        font-size: 30px;
+    }
+}
 /* Thank god <3 */
