@@ -62,7 +62,6 @@ a:hover {
 .pict {
     display: inline-block;
     flex: 1;
-    padding-right: 15%;
     max-width: 500px;
 }
 
